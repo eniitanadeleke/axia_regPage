@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(bg-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: f9f9f9; */
+}
+
+.form-container {
+    width: 90%;
+    max-width: 600px;
+    /* background: pink; */
+    padding: 20px;
+    border-radius: 8px;
+    /* background-image: url(bg-2.jpeg); */
+}
+
+/* header {
+    width: 100%;
+} */
+
+header h2 {
+    /* background-color: rgb(226, 43, 116); */
+    padding: 20px 0;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+
+}
+
+
+#form-heading {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+#form-heading h2 {
+    margin: 0;
+    font-size: 24px;
+    color: 333;
+    border-radius: 5px;
+}
+
+#form-heading p {
+    margin: 5px 0 0;
+    color: #fff;
+}
+
+#firstname,
+#lastname,
+#about,
+#age {
+    width: 95%;
+    padding: 8px;
+}
+
+#country,
+#gender {
+    width: 98%;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid gold; */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+label {
+    font-style: italic;
+    
+}
+
+button {
+    background-color: bisque;
+    padding: 10px;
+    width: 98%;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+

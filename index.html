@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <header id="form-heading">
+            <h2>Enny's Axia Africa Registration</h2>
+            <hr>
+            <p>Please fill the form below to get on the Axia training</p>
+            <hr>
+        </header>
+        <main>
+            <form>
+                
+                <fieldset>
+                    <legend>Bio-Data</legend>
+                    <div class="form-group" >
+                        <label for="firstname">First Name</label>
+                        <br>
+                        <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required>
+                    </div>
+    
+                    
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <br>
+                        <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <br>
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="prefer_not_to_say">Prefer Not To Say</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="age">Age (optional)</label>
+                        <br>
+                        <input type="date" id="age" name="age">
+                    </div>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Application</legend>
+                    <div class="form-group">
+                        <label>Do you have a laptop?</label>
+                        <div class="inline-options">
+                            <label>
+                                <input type="radio" name="laptop" value="yes" required> Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="laptop" value="no" required> No
+                            </label>
+                        </div>
+                    </div>
+    
+                    
+                    <div class="form-group">
+                        <p>How did you hear about Axia Africa?</p>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="hear_about_us" value="google_ads"> Google</label>
+                            <br>
+                            <label><input type="checkbox" name="hear_about_us" value="paystack_ads"> Paystack Ads</label>
+                            <br>
+                            <label><input type="checkbox" name="hear_about_us" value="youtube_ads"> YouTube Ads</label>
+                            <br>
+                            <label><input type="checkbox" name="hear_about_us" value="instagram_ads"> Instagram Ads</label>
+                            <br>
+                            <label><input type="checkbox" name="hear_about_us" value="tv_radio"> TV/Radio</label>
+                            <br>
+                            <label><input type="checkbox" name="hear_about_us" value="threads"> Threads</label>
+                            <br>
+                            <label><input type="checkbox" name="hear_about_us" value="others"> Others</label>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="about">Tell us about yourself?</label>
+                        <br>
+                        <textarea id="about" name="about" placeholder="Type here" rows="4"></textarea>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="country">Select a country</label>
+                        <select id="country" name="country" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="nigeria">Nigeria</option>
+                            <option value="india">India</option>
+                            <option value="ghana">Ghana</option>
+                            <option value="liberia">Liberia</option>
+                            <option value="namibia">Namibia</option>
+                            <option value="south_africa">South Africa</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <button type="submit" id="submitbutton">Submit</button>
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>
